@@ -1,0 +1,21 @@
+
+num_demos: 1
+num_bc_iters: 100
+num_evals: 6
+num_train_iters: 6
+algorithm: "bc" 
+device: "cpu"
+env_name: "MountainCar"
+human_render: True
+mode: "train"
+render_episodes: 5
+hidden_dim: 64
+input_dim: 2
+output_dim: 3
+num_layers: 0
+activation: "relu"
+lr: 1e-2
+weight_decay: 0
+output_dir: "output"
+checkpoint_path: "checkpoint.pkl"
+results_path: "results.pkl"

@@ -1,0 +1,25 @@
+device: "cpu"
+env_name: "CartPole"
+
+seed: 0
+use_seed: False
+
+human_render: False
+render_per_epoch: False
+
+num_epochs: 50
+batch_size: 5000
+num_eval_episodes: 1
+
+hidden_dims: [32]
+activation: "tanh"
+output_activation: "identity"
+
+lr: 1e-2
+use_rtg: False
+
+output_dir: "output"
+hparams_path: "hparams.json"
+checkpoint_path: "checkpoint.pkl"
+results_path: "results.pkl"
+

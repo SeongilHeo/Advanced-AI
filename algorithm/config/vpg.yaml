@@ -1,0 +1,25 @@
+device: "cpu"
+env_name: "CartPole"
+mode: "train"
+
+lr: 1e-2
+num_epochs: 50
+batch_size: 5000
+hidden_dim: 32
+
+num_layers: 0
+activation: "tanh"
+output_activation: "identity"
+
+num_eval_episodes: 1
+human_render: False
+seed: 0
+use_seed: False
+
+output_dir: "output"
+checkpoint_path: "checkpoint.pkl"
+results_path: "results.pkl"
+
+render_per_epoch: False
+
+use_rtg: False

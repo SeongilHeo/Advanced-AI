@@ -1,0 +1,27 @@
+algorithm: "q"
+device: "cpu"
+env_name: "Blackjack"
+human_render: True
+
+mode: "train"
+num_episodes: 100000
+lr: 0.1
+discount_factor: 0.95
+
+exploration_mode: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_final: 0.05
+epsilon_decay: 50000
+epsilon_schedule: "linear"
+epsilon: 0.05
+temperature: 1.0
+
+eval_interval: 5000
+num_eval_episodes: 500
+num_render_episodes: 5
+seed: 0
+ma_window: 5000
+
+output_dir: "output"
+checkpoint_path: "checkpoint.pkl"
+results_path: "results.pkl"

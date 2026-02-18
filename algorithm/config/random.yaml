@@ -1,0 +1,12 @@
+algorithm: "random"
+env_name: "LunarLander"
+human_render: False
+
+mode: "eval"
+num_eval_episodes: 20
+num_render_episodes: 5
+seed: 0
+
+output_dir: "output"
+checkpoint_path: "checkpoint.pkl"
+results_path: "results.pkl"

@@ -1,0 +1,35 @@
+algorithm: "dqn"
+device: "cpu"
+env_name: "LunarLander"
+human_render: True
+
+mode: "train"
+num_episodes: 500
+batch_size: 128
+gamma: 0.99
+eps_start: 0.9
+eps_end: 0.01
+eps_decay: 2500
+tau: 0.005
+lr: 3e-4
+memory_capacity: 10000
+
+eval_interval: 50
+num_eval_episodes: 20
+num_render_episodes: 5
+log_interval: 10
+seed: 0
+
+output_dir: "output"
+checkpoint_path: "checkpoint.pkl"
+results_path: "results.pkl"
+
+hidden_dim: 128
+num_layers: 1
+activation: "relu"
+network_type: "fcn"
+cnn_image_size: 84
+cnn_head_hidden_dim: 512
+cnn_head_num_layers: 0
+cnn_conv_activation: "relu"
+cnn_head_activation: "relu"
